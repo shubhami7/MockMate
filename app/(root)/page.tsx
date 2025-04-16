@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
-import robot from "../../public/robot.png";
+import robot from "../../public/Robot.png";
 import Image from "next/image";
 import InterviewCard from "@/components/InterviewCard";
 import { getCurrentUser } from "@/lib/actions/auth.action";
@@ -25,11 +25,14 @@ const page = async () => {
       <section className="card-cta">
         <div className="flex flex-col gap-6 maw-w-lg">
           <h2>
-            Get Interview Confident with AI-Powered Mock Interviews & Feedback
+            Get Interview Confident with AI-Powered Software Engineering Mock
+            Interviews & Feedback
           </h2>
-          <p className="text-lg">Practice on real interview questions</p>
+          <p className="text-lg">
+            Star by creating a personalized mock interview!
+          </p>
           <Button asChild className="btn-primary max-sm:w-full">
-            <Link href="/interview">Start Mock Interview</Link>
+            <Link href="/interview">Create Personal Interview</Link>
           </Button>
         </div>
         <Image
