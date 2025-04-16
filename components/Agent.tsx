@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import aiAvatar from "../public/ai-avatar.png";
-import userAvatar from "../public/user-avatar.png";
+import userAvatar from "../public/user-avatar.jpg";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import { vapi } from "@/lib/vapi.sdk";
