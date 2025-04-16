@@ -101,6 +101,12 @@ const AuthForm = ({ type }: { type: FormType }) => {
           <h2 className="text-primary-100">MockMate</h2>
         </div>
         <h3 className="text-center">Practice job interviews with AI</h3>
+        <p className="text-center">
+          If you are a recruiter or just want to explore the site, please input
+          the following credentials:
+        </p>
+        <p className="-mt-3">Email: test@gmail.com</p>
+        <p className="-mt-3">Password: test1234</p>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}

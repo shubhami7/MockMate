@@ -1,7 +1,5 @@
-import React from "react";
 import dayjs from "dayjs";
 import Image from "next/image";
-import { getRandomInterviewCover } from "@/lib/utils";
 import calenderIcon from "../public/calendar.svg";
 import starIcon from "../public/star.svg";
 import { Button } from "./ui/button";
@@ -47,7 +45,10 @@ const InterviewCard = async ({
               <p>{formattedDate}</p>
               <div className="flex flex-row gap-2 items-center">
                 <Image src={starIcon} alt="star-icon" width={22} height={22} />
-                <p>{feedback?.totalScore || "---"}/100</p>
+                <p>
+                  {feedback?.totalScore ? feedback.totalScore : "---"}
+                  /100
+                </p>
               </div>
             </div>
           </div>
